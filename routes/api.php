@@ -127,3 +127,9 @@ Route::middleware('auth:sanctum')->get('/debug-token', function (Request $reques
         'token_guard' => auth()->guard()->getName()
     ]);
 });
+Route::get('/test', function () {
+    return response()->json(['status' => 'API is working ✅']);
+});
+Route::post('/test', function () {
+    return response()->json(['status' => 'POST request works ✅']);
+});
