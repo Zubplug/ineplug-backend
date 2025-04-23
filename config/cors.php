@@ -1,24 +1,23 @@
-<?php
-
 return [
 
-    'paths' => ['api/*', 'admin/*', 'sanctum/csrf-cookie'],
+'paths' => ['api/*', 'admin/*', 'sanctum/csrf-cookie'],
 
-    'allowed_methods' => ['*'],
+'allowed_methods' => ['*'],
 
-    'allowed_origins' => [
-        'http://localhost:5173',
-        'http://127.0.0.1:5173',
-        'https://ineplug-frontend.vercel.app', // ✅ PRODUCTION FRONTEND
-    ],
+'allowed_origins' => [
+    'https://ineplug-frontend.vercel.app',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+],
 
-    'allowed_origins_patterns' => [],
+'allowed_origins_patterns' => [],
 
-    'allowed_headers' => ['*'],
+'allowed_headers' => ['*'],
 
-    'exposed_headers' => [],
+'exposed_headers' => [],
 
-    'max_age' => 0,
+'max_age' => 0,
 
-    'supports_credentials' => false,
+'supports_credentials' => true,
+
 ];
